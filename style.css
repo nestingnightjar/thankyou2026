@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pangolin&display=swap");
+
+html, body {
+    color: rgb(50, 20, 0);
+    background-color: rgb(255, 218, 213);
+    overflow-x: hidden;
+    margin: 0 20px; 
+    font-family: "Caveat", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.container {
+    display:block;
+    margin-top: 15vh;
+    padding-bottom:75px;
+}
+
+.textCenter {
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+.image {
+    float:right;
+    margin-top:3em;
+    padding-left:1em;
+    padding-bottom: 1em;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.image img {
+    height:650px;
+    width:300px;
+}
+
+#icon{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    padding-top:1em;
+    height:0em;
+}
+
+#icon img{
+    width:5%;
+    margin-top:7.5em;
+}
+
+#subpageContainer {
+    margin-top: 0;
+    padding-bottom:0;
+}
+
+#textLeft{
+    text-align:left;
+}
+
+#altText {
+    color: rgb(93, 24, 7);
+    font-size: 26px;
+    letter-spacing: -0.0025em;
+    line-height: 0.1;
+}
+
+#codeForm {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#code {
+    width:400px;
+    height:auto;
+    
+    padding: 0.5em;
+    border: solid 3px rgb(255, 206, 192);
+    background-color: rgb(255, 237, 237);
+    color: rgb(50, 20, 0);
+    font-size:28px;
+    font-family: "Caveat", serif;
+    text-align: center;
+}
+
+.caveat {
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

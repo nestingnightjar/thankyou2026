@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thank you</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="icon">
+    <img src="assets/heart1.png">
+</div>
+
+<div class="container">
+    <p class="textCenter"><span id="altText">Every year, I find myself reminising on all of the things I feel grateful for. And always, my thoughts miraciously land on the people I hold dear to my heart. Perhaps it isn't miracious at all, actually — I will forever cherish these connections I share with you. And yet, this feeling sometimes feels like a curse when it comes down to expressing it; I'm not very good with my words. <br>I will stumble. I will hesitate. I will instinctively downplay those feelings with a flurry of 'ums', 'likes', 'maybes', or bad jokes.<br>This gratitude and affection clutches me so tightly, yet remains so intangible, even after over 20 years of living.<br>
+        <br>This year, I wanted to do something special for Thanksgiving. If you're seeing this, I've given you a code word, and I invite you to enter it below! I know words on a screen don't nearly do the feelings I hold any justice, but then again, a nonchalant 'thanks' doesn't either haha.<br><br>I hope you don't mind my endless flailing, and futile struggle to find those words to say to you—which can capture all my gratitude and love—even if they do not exist. Even if it's through those dreaded three words: "I love you."</span>
+        <br><br>So, thank you, thank you, thank you, for being a part of my life, and for filling it with such brilliant colors.</p>
+        <form id="codeForm" autocomplete="off">
+            <input type="text" id="code" name="code" placeholder="i'm thankful for your..." required><br>
+        </form>
+    </div>
+
+<script> //script that takes in user input, and redirects to new html
+    // this is the array
+    const keywords = [ //said values and corresponding html page
+        { value: "our converging lives", url: "01converginglives.html" },
+        { value: "even through the fires of life, you still persist.", url: "02eventhroughthefiresoflife.html" },
+        { value: "calloused heart", url: "03callousedheart.html" },
+
+        { value: "everlasting love", url: "04everlastinglove.html" },
+        { value: "unconditional grace", url: "05unconditionalgrace.html" },
+        { value: "stalwart conviction", url: "06stalwartconviction.html" },
+        { value: "vigorous fervor", url: "07vigorousfervor.html" },
+        // { value: "unrelenting perseverance", url: "08unrelentingperseverance.html" },
+
+        { value: "steadfast courage", url: "09endlesscourage.html" },
+        { value: "enduring companionship", url: "10enduringcompansionship.html" },
+        { value: "warm kindness", url: "11warmkindness.html" },
+        // { value: "creative inspiration", url: "12creativeinspiration.html" },
+        { value: "guiding light", url: "13guidinglight.html" },
+        { value: "uplifting reassurance", url: "14upliftingreassurance.html" },
+
+        // { value: "steadfast diligence", url: "15steadfastdiligence.html" },
+        { value: "gentle compassion", url: "16gentlecompassion.html" },
+    ];
+
+    document.getElementById("codeForm").addEventListener('submit', function(event) { 
+        event.preventDefault(); //press enter to make go
+
+        const input = document
+            .getElementById("code")
+            .value.trim().toLowerCase(); //change all capital letters to lowercase
+
+        const matching = keywords.find(keyword => keyword.value === input);
+
+        if (matching) {
+            window.location.href = matching.url;
+        } else {
+            // nothing happens
+        }
+    });
+</script>
+
+</body>
+</html>
